@@ -6,12 +6,12 @@ A crash recorder plugin compatible with FCR and all real time crash reporting to
 
 - Can Record Exceptions from every possible source in your app
 - Compatible with All real time crash reporting Tools
-- Compatible with FCR
+- Compatible with [FCR](https://pub.dev/packages/fcr_server)
 - Will make your life much easy when working with **Flutter Grey Screen** in release mode.
 
 ## Getting started
 
-1. Install FCR server
+1. Install (FCR server)[https://pub.dev/packages/fcr_server]
 
 ```
 flutter pub global activate fcr_server
@@ -62,7 +62,7 @@ import 'package:flutter_pipeline/flutter_pipeline.dart';
 void main() {
     ...
 
-    final pipeline = FlutterErrorPipeline.i;
+    final pipeline = FlutterPipeline.i;
     pipeline.enableFCRLogging(
         host: "192.168.0.113", // from above step
         port: 9843, // from above step

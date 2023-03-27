@@ -2,55 +2,39 @@ A crash local recorder server for flutter pipeline plugin
 
 # Configure Your App
 
-```
+Visit [Flutter Pipeline](https://pub.dev/packages/flutter_pipeline)
 
-
-```
-
-# Running the sample
-
-## Running with the Dart SDK
-
-You can run the example with the [Dart SDK](https://dart.dev/get-dart)
-like this:
+# Installation
 
 ```
-$ dart run bin/server.dart
-Server listening on port 8080
+flutter pub global activate fcr_server
 ```
 
-And then from a second terminal:
+# Running the server
 
 ```
-$ curl http://0.0.0.0:8080
-Hello, World!
-$ curl http://0.0.0.0:8080/echo/I_love_Dart
-I_love_Dart
+fcr
 ```
 
-## Running with Docker
+This will start the crash recorder server at **root** of your project
 
-If you have [Docker Desktop](https://www.docker.com/get-started) installed, you
-can build and run with the `docker` command:
-
-```
-$ docker build . -t myserver
-$ docker run -it -p 8080:8080 myserver
-Server listening on port 8080
-```
-
-And then from a second terminal:
+**OUTPUT**
 
 ```
-$ curl http://0.0.0.0:8080
-Hello, World!
-$ curl http://0.0.0.0:8080/echo/I_love_Dart
-I_love_Dart
+Server listening on port 9843
+
+In you flutter app use the below config
+
+Host: 192.168.0.113
+Port: 9843
+Code: 901805 // a secret code for secure communication
+Crash Reports will be saved at ./crashes
 ```
 
-You should see the logging printed in the first terminal:
+### Where can i see crash logs?
 
-```
-2021-05-06T15:47:04.620417  0:00:00.000158 GET     [200] /
-2021-05-06T15:47:08.392928  0:00:00.001216 GET     [200] /echo/I_love_Dart
-```
+By default fcr will write log files at **./crashes** wherever you run the fcr.
+
+### Have Questions?
+
+Lets discuss in github

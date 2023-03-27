@@ -1,7 +1,8 @@
 name: fcr_server
 description: A crash local recorder server for flutter pipeline plugin
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+homepage: https://github.com/raj457036/flutter_crash_recorder/tree/main/flutter_crash_recorder_server
+repository: https://github.com/raj457036/flutter_crash_recorder
 
 executables:
   fcr:  server
