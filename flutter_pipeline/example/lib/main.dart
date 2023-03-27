@@ -6,9 +6,9 @@ void main() {
   final pipeline = FlutterPipeline.i;
 
   pipeline.enableFCRLogging(
-    host: "<run frc server>",
+    host: "<run FCR server>",
     port: 9843,
-    code: "<run frc server>",
+    code: "<run FCR server>",
     recordCrashes: kReleaseMode,
   );
   pipeline.run(() => runApp(const MainApp()));
