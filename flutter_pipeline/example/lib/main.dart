@@ -1,7 +1,17 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_pipeline/flutter_pipeline.dart';
 
 void main() {
-  runApp(const MainApp());
+  final pipeline = FlutterPipeline.i;
+
+  pipeline.enableFCRLogging(
+    host: "<run frc server>",
+    port: 9843,
+    code: "<run frc server>",
+    recordCrashes: kReleaseMode,
+  );
+  pipeline.run(() => runApp(const MainApp()));
 }
 
 class MainApp extends StatelessWidget {
