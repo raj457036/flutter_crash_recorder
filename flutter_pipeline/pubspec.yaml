@@ -1,6 +1,7 @@
 name: flutter_pipeline
 description: A flutter plugin to record crashes compatible with FCR and all real time crash reporting tool too.
-version: 0.0.3
+version: 0.0.4
+
 homepage: https://github.com/raj457036/flutter_crash_recorder/tree/main/flutter_pipeline
 repository: https://github.com/raj457036/flutter_crash_recorder
 
