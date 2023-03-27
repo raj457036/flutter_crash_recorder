@@ -1,4 +1,4 @@
-name: flutter_local_crash_recorder
+name: fcr_server
 description: A crash local recorder server for flutter pipeline plugin
 version: 1.0.0
 # repository: https://github.com/my_org/my_repo
