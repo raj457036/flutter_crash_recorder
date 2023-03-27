@@ -11,7 +11,7 @@ A crash recorder plugin compatible with FCR and all real time crash reporting to
 
 ## Getting started
 
-1. Install (FCR server)[https://pub.dev/packages/fcr_server]
+1. Install [FCR server](https://pub.dev/packages/fcr_server)
 
 ```
 flutter pub global activate fcr_server
